@@ -1,0 +1,25 @@
+<component name="libraryTable">
+  <library name="GOPATH &lt;service&gt;">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../T" />
+      <root url="file://$PROJECT_DIR$/../webapp" />
+      <root url="file://$PROJECT_DIR$/../mywebapp.iml" />
+      <root url="file://$PROJECT_DIR$/../github.com" />
+      <root url="file://$PROJECT_DIR$/../.DS_Store" />
+      <root url="file://$PROJECT_DIR$/../mrulist" />
+      <root url="file://$PROJECT_DIR$/../katas" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <excluded>
+      <root url="file://$PROJECT_DIR$/../github.com/boltdb/bolt/.git" />
+      <root url="file://$PROJECT_DIR$/../katas/.idea" />
+      <root url="file://$PROJECT_DIR$/../github.com/gorilla/context/.git" />
+      <root url="file://$PROJECT_DIR$/service" />
+      <root url="file://$PROJECT_DIR$" />
+      <root url="file://$PROJECT_DIR$/../github.com/gorilla/mux/.git" />
+      <root url="file://$PROJECT_DIR$/../github.com/rsrsps/btree/.git" />
+      <root url="file://$PROJECT_DIR$/../github.com/bmatsuo/lmdb-go/.git" />
+    </excluded>
+  </library>
+</component>

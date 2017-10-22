@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Main</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <h2>Resources</h2>
+    <table class="table" id="resource-table">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Tags</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr id="resource0"/>
+        </tbody>
+    </table>
+</div>
+
+
+
+<script>
+$(document).ready(function(){
+    $.getJSON("/resources/", function(json){
+           $.each(json.Resources, function (i, r) {
+                console.log(r.Name, i);
+                $('#resource'+i).html("<td>"+r.Name+"</td>"+"<td>"+r.Tags+"</tr")
+                $('#resource-table').append('<tr id="resource'+(i+1)+'"></tr>');
+            });
+    });
+})
+</script>
+
+</body>
+</html>
+

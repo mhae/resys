@@ -1,5 +1,7 @@
 package rest
 
+// REST layer for Users
+
 import (
 	"net/http"
 	"fmt"
@@ -16,7 +18,6 @@ type User struct {
 const UsersPath = "/users/"
 
 
-// TODO Inject?
 var usersService service.UserService
 
 func NewUsersHandler(us service.UserService) func(w http.ResponseWriter, r *http.Request) {

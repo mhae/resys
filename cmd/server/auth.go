@@ -1,5 +1,7 @@
 package main
 
+// Some authentication utilities
+
 import (
 	"fmt"
 	"github.com/gorilla/securecookie"
